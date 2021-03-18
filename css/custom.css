@@ -1,0 +1,262 @@
+.timeline{
+  margin-top:20px;
+  position:relative;
+  
+}
+
+.timeline:before{
+  position:absolute;
+  content:'';
+  width:4px;
+  height:calc(100% + 50px);
+background: rgb(138,145,150);
+background: -moz-linear-gradient(left, rgba(138,145,150,1) 0%, rgba(122,130,136,1) 60%, rgba(98,105,109,1) 100%);
+background: -webkit-linear-gradient(left, rgba(138,145,150,1) 0%,rgba(122,130,136,1) 60%,rgba(98,105,109,1) 100%);
+background: linear-gradient(to right, rgba(138,145,150,1) 0%,rgba(122,130,136,1) 60%,rgba(98,105,109,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8a9196', endColorstr='#62696d',GradientType=1 );
+  left:14px;
+  top:5px;
+  border-radius:4px;
+}
+
+
+
+.timeline-month:before{
+  position:absolute;
+  content:'';
+  width:20px;
+  height:20px;
+background: rgb(138,145,150);
+background: -moz-linear-gradient(top, rgba(138,145,150,1) 0%, rgba(122,130,136,1) 60%, rgba(112,120,125,1) 100%);
+background: -webkit-linear-gradient(top, rgba(138,145,150,1) 0%,rgba(122,130,136,1) 60%,rgba(112,120,125,1) 100%);
+background: linear-gradient(to bottom, rgba(138,145,150,1) 0%,rgba(122,130,136,1) 60%,rgba(112,120,125,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8a9196', endColorstr='#70787d',GradientType=0 );
+  border-radius:100%;
+  border:1px solid #17191B;
+  left:5px;
+}
+
+.timeline-section{
+  padding-left:35px;
+  display:block;
+  position:relative;
+  margin-bottom:30px;
+}
+
+.timeline-date-green{
+  margin-bottom:15px;
+  padding:2px 15px;
+  background: #16AA00;
+  position:relative;
+  display:inline-block;
+  border-radius:20px;
+  border:1px solid #17191B;
+  color:#fff;
+text-shadow:1px 1px 1px rgba(0,0,0,0.3);
+}
+
+.timeline-date{
+  margin-bottom:15px;
+  padding:2px 15px;
+  background: #2195ff;
+  position:relative;
+  display:inline-block;
+  border-radius:20px;
+  border:1px solid #17191B;
+  color:#fff;
+text-shadow:1px 1px 1px rgba(0,0,0,0.3);
+}
+
+.timeline-section:before{
+  content:'';
+  position:absolute;
+  width:30px;
+  height:1px;
+  background-color:#444950;
+  top:12px;
+  left:20px;
+}
+
+.timeline-section:after{
+  content:'';
+  position:absolute;
+  width:10px;
+  height:10px;
+  background: transparent;
+  top:7px;
+  left:11px;
+  border:2px solid #16aa00;
+  border-radius:100%;
+}
+
+.timeline-section .col-sm-4{
+  margin-bottom:15px;
+}
+
+.timeline-box{
+  position:relative;
+  
+ background-color:#333333;
+  border-radius:15px;
+  border-top-left-radius:0px;
+  border-bottom-right-radius:0px;
+  border:1px solid #17191B;
+  transition:all 0.3s ease;
+  overflow:hidden;
+}
+
+.box-icon{
+  position:absolute;
+  right:5px;
+  top:0px;
+}
+
+.box-title{
+  padding:5px 15px;
+  border-bottom: 1px solid #17191B;
+  color: white;
+}
+
+.box-title i{
+  margin-right:5px;
+}
+
+.box-content{
+  padding:5px 15px;
+  background-color:#222222;
+}
+
+.box-content strong{
+  color:#666;
+  font-style:italic;
+  margin-right:5px;
+}
+
+.box-item{
+  margin-bottom:5px;
+  color: white;
+}
+
+.box-footer{
+ padding:5px 15px;
+  border-top: 1px solid #17191B;
+  background-color:#151515;
+  text-align:right;
+  font-style:italic;
+}
+
+.main-header .nav-outer {
+  background-color: none;
+}
+
+.main-header .header-upper .inner-container {
+  background: rgba(52,93,157,0.97);
+}
+
+:root {
+  --thm-font: "Teko", sans-serif;
+  --thm-b-font: "Rubik", sans-serif;
+  --thm-base: #345D9D;
+  --thm-base-rgb: 52, 93, 157;
+  --thm-black: #222429;
+  --thm-text: #686a6f;
+}
+
+.nav-outer .mobile-nav-toggler {
+  position: relative;
+  float: right;
+  font-size: 30px;
+  line-height: 40px;
+  cursor: pointer;
+  margin-left: 0px;
+  color: #dedede;
+  margin: 40px 0px 0px;
+  display: none;
+}
+
+.scroll-to-top {
+  background: #345d9d;
+}
+
+body {
+  font-size: 16px;
+  font-family: var(--thm-b-font);
+  color: var(--thm-text);
+  line-height: 2em;
+  font-weight: 300;
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  top: 0 !important;
+}
+
+.main-menu .navigation>li>a {
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+
+}
+
+preloader .icon {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(../images/litecoin-ltc-logo.svg);
+  transition: all 400ms ease;
+  -webkit-animation-name: rotateMe;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+
+  -moz-animation-name: rotateMe;
+  -moz-animation-duration: 4s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+
+  -ms-animation-name: rotateMe;
+  -ms-animation-duration: 4s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+
+  animation-name: rotateMe;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.timeline-month{
+  position:relative;
+  border: none;
+  padding:14px 15px 4px 35px;
+  background-color:#345d9d;
+  display:inline-block;
+  width: 500px;
+  border-radius:50px;
+  margin-bottom:50px;
+  color: white;
+  font-size: x-large;
+}
+
+.main-header .header-upper .inner-container {
+    display:block;
+  }
+
+  .sec-title h2 {
+  position: relative;
+  display: block;
+  font-size: 70px;
+  line-height: 1.9em;
+  text-transform: uppercase;
+  color: var(--thm-black);
+  font-weight: 300;
+  margin-bottom: 0px;
+  margin-top: 70px;
+}
