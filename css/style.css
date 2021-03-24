@@ -610,7 +610,7 @@ img {
   position: relative;
   display: inline-block;
   max-width: 100%;
-  max-height: 64px;
+  max-height: 48px;
   z-index: 1;
 }
 
@@ -5697,7 +5697,7 @@ img.lazy-image.loaded {
 }
 
 .main-footer .logo-widget .logo img {
-  height: 64px;
+  height: 48px;
 }
 
 .main-footer .logo-widget .text {
