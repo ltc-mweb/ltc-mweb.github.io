@@ -67,27 +67,6 @@ text-shadow:1px 1px 1px rgba(0,0,0,0.3);
 text-shadow:1px 1px 1px rgba(0,0,0,0.3);
 }
 
-.timeline-section:before{
-  content:'';
-  position:absolute;
-  width:30px;
-  height:1px;
-  background-color:#444950;
-  top:12px;
-  left:20px;
-}
-
-.timeline-section:after{
-  content:'';
-  position:absolute;
-  width:10px;
-  height:10px;
-  background: transparent;
-  top:7px;
-  left:11px;
-  border:2px solid #16aa00;
-  border-radius:100%;
-}
 
 .timeline-section .col-sm-4{
   margin-bottom:15px;
@@ -260,3 +239,21 @@ preloader .icon {
   margin-bottom: 0px;
   margin-top: 70px;
 }
+
+.timeline-section{
+  margin-top: 125px;
+  margin-bottom: 70px;
+}
+
+.mweb-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0px;
+  height: 80px;
+  padding: 15px;
+  background: rgba(52,93,157,0.97);
+}
+

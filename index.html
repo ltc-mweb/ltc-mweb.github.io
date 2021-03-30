@@ -12,12 +12,6 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/fontawesome-all.css" rel="stylesheet">
     <link href="css/owl.css" rel="stylesheet">
-    <link href="css/flaticon.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/jquery-ui.css" rel="stylesheet">
-    <link href="css/jquery.fancybox.min.css" rel="stylesheet">
-    <link href="css/hover.css" rel="stylesheet">
-    <link href="css/custom-animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <!-- rtl css -->
@@ -39,128 +33,101 @@
 </head>
 
 <body>
-
-    <div class="page-wrapper">
-
-
-        <!-- Preloader -->
-        <div class="preloader">
-            <div class="icon"></div>
-        </div>
-
-        <!-- Main Header -->
-        <header class="main-header header-style-one">
-
-            <!-- Header Upper -->
-            <div class="header-upper">
-                <div class="inner-container clearfix">
-                    <!--Logo-->
-                    <div class="logo-box">
-                        <div class="logo"><a href="index.html" title="MWEB"><img
-                                    src="images/MWEB.png" width="48px" height="48px" id="thm-logo" alt="MWEB"
-                                    title="MWEB"></a></div>
-                    </div>
-                    <div class="nav-outer clearfix">
-                        <!--Mobile Navigation Toggler-->
-                        <div class="mobile-nav-toggler"><span class="icon flaticon-menu-2"></span><span
-                                class="txt">Menu</span></div>
-
-                        <!-- Main Menu -->
-                        <nav class="main-menu navbar-expand-md navbar-light">
-                            <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-                                <h2 style="margin-top: 25px">MWEB Roadmap</h2>
-                            </div>
-                        </nav>
-                    </div>
-                    <div class="other-links clearfix">
-                    </div>
-
-                </div>
-            </div>
-            <!--End Header-->
-
-        </header>
-        <!-- End Main Header -->
-
-        <!--Mobile Menu-->
-        <div class="side-menu__block">
-
-
-            <div class="side-menu__block-overlay custom-cursor__overlay">
-                <div class="cursor"></div>
-                <div class="cursor-follower"></div>
-            </div><!-- /.side-menu__block-overlay -->
-            <div class="side-menu__block-inner ">
-                <div class="side-menu__top justify-content-end">
-
-                    <a href="#" class="side-menu__toggler side-menu__close-btn"><img src="images/close-1-1.png"
-                            alt=""></a>
-                </div><!-- /.side-menu__top -->
-
-
-                <nav class="mobile-nav__container">
-                    <!-- content is loading via js -->
-                </nav>
-                <div class="side-menu__sep"></div><!-- /.side-menu__sep -->
-                <div class="side-menu__content">
-                    <p>MWEB</p>
-                    <div class="side-menu__social">
-                        <a href="https://github.com/litecoin-project/litecoin"><i class="fab fa-github"></i></a>
-                        <a href="https://twitter.com/litecoin"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <section class="contact-section">
-            <div class="auto-container"> 
-                <div class="timelineCont">
-                    <ul>
-                        <li>
-                            MWEB is set to be the largest upgrade to the Litecoin network ever, promising to provide fungibility for all, while improving LTC's scalability.
-                            Due to the size of the change, it has been in progress for 2 years now, but the end is in sight!
-                            This timeline provides our best <i>estimates</i> for when the final steps will take place, but please keep in mind that everything is subject to change.
-                        </li>
-                        <li class="clearfix">
-                            <span>Mar 15 2021</span>
-                            <h3>Code Complete</h3>
-                            libmw is a completely self-contained project with clearly defined set of APIs that all calls from the existing Litecoin project go through. It currently uses cmake and builds as a shared library, but to maintain consistency with the existing build & release process, we will eventually turn this into a makefile project instead, and build it as a static library. I will create some docs later this week that will offer suggestions for how to go about reviewing the code, and will include API usage examples that you can use as a guide to understanding how libmw is used.
-                        </li>
-                        <li>
-                            <span>Q2 2021</span>
-                            <h3>Reviews and Audits</h3>
-                            The code will be reviewed by LTC & BTC developers, mimblewimble experts, and professional security auditors.
-                            We will also be testing in parallel and fixing any issues found.
-                        </li>
-                        <li>
-                            <span>Aug 2021</span>
-                            <h3>Release</h3>
-                            The first LTC release containing MWEB code.
-                            This will have the complete MWEB code, ready to be used by miners and node operators everywhere as soon as MWEB activates.
-                        </li>
-                        <li>
-                            <span>Q3 2021</span>
-                            <h3>Miner signaling</h3>
-                            Once miners take the released code, they may begin signaling for MWEB activation right away.
-                            As soon as the activation threshold is met, the MWEB activation date will be locked-in.
-                        </li>
-                        <li>
-                            <span>Q4 2021</span>
-                            <h3>MWEB activates!</h3>
-                            Enjoy using one of the most scalable, fungible cryptocurrencies ever.
-                            May God have mercy on the fiat currencies of the world.
-                        </li>
-                        <li><!-- Intentionally left blank for timeline positioning --></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="icon"></div>
     </div>
 
+    <!-- Main Header -->
+    <header class="main-header header-style-one">
 
-    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+        <!-- Header Upper -->
+        <div class="header-upper">
+            <div class="inner-container clearfix">
+                <!--Logo-->
+                <div class="logo-box">
+                    <div class="logo">
+                        <a href="index.html" title="MWEB Roadmap">
+                            <img src="images/MWEB.png" width="48px" height="48px" id="thm-logo" alt="MWEB" title="MWEB" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="nav-outer clearfix">
+                    <!--Mobile Navigation Toggler-->
+                    <div class="mobile-nav-toggler"><span class="icon flaticon-menu-2"></span><span
+                            class="txt">Menu</span></div>
+
+                    <!-- Main Menu -->
+                    <nav class="main-menu navbar-expand-md navbar-light">
+                        <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                            <h2 style="margin-top: 25px">MWEB Roadmap</h2>
+                        </div>
+                    </nav>
+                </div>
+                <div class="other-links clearfix">
+                </div>
+
+            </div>
+        </div>
+        <!--End Header-->
+
+    </header>
+    <!-- End Main Header -->
+
+    <section class="timeline-section">
+        <div class="auto-container"> 
+            <div class="timelineCont">
+                <ul>
+                    <li class="unfinished">
+                        MWEB is set to be the largest upgrade to the Litecoin network ever, promising to provide fungibility for all, while improving LTC's scalability.
+                        Due to the size of the change, it has been in progress for 2 years now, but the end is in sight!
+                        This timeline provides our best <i>estimates</i> for when the final steps will take place, but please keep in mind that everything is subject to change.
+                    </li>
+                    <li>
+                        <span>Mar 15 2021</span>
+                        <h3>Code Complete</h3>
+                        The initial code is complete! The first pull request can be found <a href="https://github.com/litecoin-project/litecoin/pull/703">here</a>.
+                        This contains all of the code for "libmw", which is a modular library that helps keep the bulk of the MWEB code separate from the existing codebase,
+                        which makes it easier for us to continue to take improvements from the bitcoin code.
+                    </li>
+                    <li class="unfinished">
+                        <span>Q2 2021</span>
+                        <h3>Reviews and Audits</h3>
+                        The code will be reviewed by LTC & BTC developers, mimblewimble experts, and professional security auditors.
+                        We will also be testing in parallel and fixing any issues found.
+                    </li>
+                    <li class="unfinished">
+                        <span>Aug 2021</span>
+                        <h3>Release</h3>
+                        The first LTC release containing MWEB code.
+                        This will have the complete MWEB code, ready to be used by miners and node operators everywhere as soon as MWEB activates.
+                    </li>
+                    <li class="unfinished">
+                        <span>Q3 2021</span>
+                        <h3>Miner signaling</h3>
+                        Once miners take the released code, they may begin signaling for MWEB activation right away.
+                        As soon as the activation threshold is met, the MWEB activation date will be locked-in.
+                    </li>
+                    <li class="unfinished">
+                        <span>Q4 2021</span>
+                        <h3>MWEB activates!</h3>
+                        Enjoy using one of the most scalable, fungible cryptocurrencies ever.
+                        May God have mercy on the fiat currencies of the world.
+                    </li>
+                    <li><!-- Intentionally left blank for timeline positioning --></li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
 
-
+    <!-- Main Footer -->
+    <footer class="mweb-footer">
+        <a href="https://github.com/litecoin-project/litecoin"><i class="fab fa-github fa-3x"></i></a>&nbsp;
+        <a href="https://twitter.com/litecoin"><i class="fab fa-twitter fa-3x"></i></a>
+    </footer>
+    
     <script src="js/jquery.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -177,8 +144,6 @@
 
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/custom-script.js"></script>
-
-
 
 </body>
 
