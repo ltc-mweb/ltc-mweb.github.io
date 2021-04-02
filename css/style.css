@@ -14362,7 +14362,7 @@ header > section > aside > h1 > span{font-size:.35em;display:block;font-family:'
 header > section > aside > h1 > section{margin:.8em 0 0;font-size:.35em;font-family:'Open Sans',sans-serif;}
 
 .timelineCont ul{border-left:5px solid #dfe5e6;margin:0 0 0 8em;}
-.timelineCont ul li{margin:.8em 4em .8em .8em;padding:1em;background:#FFF;border-radius:5px;min-height:35px;}
+.timelineCont ul li{margin:.8em 4em .8em .8em;padding:1em;background:#222429;color:#fff;border-radius:5px;min-height:35px;}
 .timelineCont ul li:before{content:'';height:15px;width:15px;border-radius:0%;border:2px solid #FFF;position:absolute;margin-left: -5.65em;box-shadow: 0 0 3px #fff;}
 .timelineCont ul li:hover{}
 .timelineCont ul li:hover:before{background:#4264d2;}
@@ -14372,7 +14372,7 @@ header > section > aside > h1 > section{margin:.8em 0 0;font-size:.35em;font-fam
 .timelineCont ul li:first-child:before{visibility:hidden;display:none;}
 .timelineCont ul li:first-child{margin:0em 4em .7em .7em ;background:transparent;padding:2.5em 1em;border:none;min-height:auto;}
 
-.timelineCont ul li h3{font-size:1.5em;margin-bottom:.5em;font-weight:bold;}
+.timelineCont ul li h3{font-size:1.5em;margin-bottom:.5em;color:white;font-weight:bold;}
 
 .timelineCont ul li:last-child:before{visibility:hidden;display:none;}
 .timelineCont ul li:last-child{margin:.7em 4em 0em .7em;background:transparent;padding:1em 1em 0 1em;border:none;min-height:auto;}
