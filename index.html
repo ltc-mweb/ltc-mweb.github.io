@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Litecoin MWEB Docs</title>
+  <meta name="description" content="Technical documentation for Litecoin's Mimblewimble Extension Block (MWEB)." />
+  <script>
+    (function () {
+      var key = "mweb-docs-theme";
+      var stored = null;
+      try {
+        stored = localStorage.getItem(key);
+      } catch (_error) {}
+      var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      var theme = stored || (prefersDark ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    }());
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <p class="brand-kicker">Litecoin</p>
+        <h1 class="brand-title">MWEB Docs</h1>
+      </div>
+      <nav>
+        <ul id="doc-list" class="doc-list"></ul>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <header class="topbar">
+        <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="sidebar">
+          Menu
+        </button>
+        <div class="topbar-actions">
+          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+            <span id="theme-toggle-text" class="sr-only">Switch to dark theme</span>
+            <span class="toggle-track" aria-hidden="true">
+              <img
+                class="toggle-clouds"
+                src="./assets/img/clouds.svg"
+                alt=""
+              />
+              <img
+                class="toggle-stars"
+                src="./assets/img/stars.svg"
+                alt=""
+              />
+              <span class="toggle-circle">
+                <span class="toggle-icon">
+                  <svg class="toggle-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.8"></circle>
+                    <path d="M12 1.8V4.1M12 19.9V22.2M22.2 12H19.9M4.1 12H1.8M19.2 4.8L17.6 6.4M6.4 17.6L4.8 19.2M19.2 19.2L17.6 17.6M6.4 6.4L4.8 4.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+                  </svg>
+                  <svg class="toggle-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M19.2 14.3A8.8 8.8 0 1 1 9.7 4.8a7 7 0 1 0 9.5 9.5Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </span>
+              </span>
+            </span>
+          </button>
+        </div>
+      </header>
+
+      <article id="doc-content" class="doc-content">
+        <p class="loading">Loading documentation...</p>
+      </article>
+
+      <footer class="pager" id="pager"></footer>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="./app.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Redirecting...</title>
+</head>
+<body>
+  <script>
+    (function () {
+      const pathname = window.location.pathname;
+      const mdMatch = pathname.match(/^(.*)\/([^/]+)\.md$/);
+
+      if (mdMatch) {
+        const base = mdMatch[1] || "";
+        const slug = mdMatch[2];
+        window.location.replace(base + "/#/" + slug + window.location.search);
+        return;
+      }
+
+      const fallbackBase = pathname.replace(/\/[^/]*$/, "");
+      window.location.replace((fallbackBase || "") + "/#/consensus" + window.location.search);
+    }());
+  </script>
+</body>
+</html>
